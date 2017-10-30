@@ -14,3 +14,7 @@ export FLASK_APP=weixin.py
 python -m flask run --host=0.0.0.0
 
 
+
+# 测试：
+
+curl -d "content=test&mobile=1358171xxxx" "http://127.0.0.1:5000/send"
