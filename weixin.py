@@ -1,23 +1,7 @@
-# weixin-api
-
-1.安装
-pip install flask
-
-2.编辑
-weixin.py
-
-3.内容
-
 # encoding: utf-8
 import os,sys,urllib,urllib2,json
 from flask import Flask,request
 app = Flask(__name__)
-
-@app.route("/")
-def hello():
-    content = request.args['username']
-    return content
-
 
 def gettoken(corpid,corpsecret):
     gettoken_url = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=' + corpid + '&corpsecret=' + corpsecret
@@ -65,13 +49,3 @@ def send():
         return content 
     else:
         return "no post request 
-4. 添加变量
-
-export FLASK_APP=weixin.py 
-
-
-5. 运行
-
-python -m flask run --host=0.0.0.0
-
-
