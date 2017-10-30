@@ -65,6 +65,8 @@ def send():
         return content 
     else:
         return "no post request 
+
+
 4. 添加变量
 
 export FLASK_APP=weixin.py 
