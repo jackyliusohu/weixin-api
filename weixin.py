@@ -48,4 +48,4 @@ def send():
         send_request = senddata(accesstoken,user,partyid,content)
         return content 
     else:
-        return "no post request 
+        return "no post request" 
