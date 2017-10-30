@@ -7,11 +7,9 @@ pip install flask
 weixin.py
 
 4. 添加变量
-
 export FLASK_APP=weixin.py 
 
 5. 运行
-
 python -m flask run --host=0.0.0.0
 
 
